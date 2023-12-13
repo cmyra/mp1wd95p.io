@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: auto 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: antiquewhite;    
+       }
+
+        ._logo {
+        left: -9px;
+        top: -21px; 
+        padding: 20px;
+        background: white;
+        border-radius: 50%;
+        margin: 0;
+        position: fixed;
+        cursor:pointer;
+       }
+
+       ._nav-center {
+            margin: 0;
+            background-color: black;
+            height: 50px;
+            display: flex;
+            list-style: none;       
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            justify-content: center;
+            letter-spacing: 1.5px;
+        }
+
+        ._nav-right {
+            position: absolute;
+            top: 0;
+            right: 16px;
+            display: flex;
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
+
+        li { 
+            padding: 0 0.938rem;
+            margin: auto 0;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #fd5f00;
+        }
+
+        ._booknow {
+            background-color: #DA8EEA;
+            border: 1vh solid transparent;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        ._abooknow {
+            color: black;
+        }
+
+        @media only screen and (max-width: 600px) {
+            ._nav-center, ._nav-right, ._boxderma, ._boxfacial, ._boxlaser, ._boxdinject, ._boxiv, ._slim, ._other { 
+                font-size: 0.5em;
+                padding: 0;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            ._abooknow, ._booknow {
+               color: white; 
+               background-color: black;
+            }
+        }
+
+        ._boxderma {
+            margin-top: 2vh;
+            margin-left: 15vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+        }
+
+        ._boxfacial {
+            margin-top: 2vh;
+            margin-left: 5vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+
+        }
+
+        ._boxlaser {
+            margin-top: 2vh;
+            margin-left: 5vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+
+        }
+
+      
+        ._boxdinject {
+            margin-top: 5vh;
+            margin-left: 15vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+
+        }
+
+        ._boxiv {
+            margin-top: 5vh;
+            margin-left: 5vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+
+        }
+
+        ._slim {
+            margin-top: 5vh;
+            margin-left: 5vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+        }
+
+        ._other {
+            margin-top: 5vh;
+            margin-left: 5vh;
+            border: 1px solid #fd5f00;
+            display: inline-block;
+            padding: 1vh 2vh 3vh 2vh;
+        }
+
+         h1 {
+            margin-top: 5vh;
+             text-align: center;
+        }
+        
+        
+        ._price {
+            
+            padding-left: 30px;
+            padding-bottom: 10px;
+        }
+                
+        footer{
+            margin: 0;
+            margin-top: 5vh;
+            background-color: black;
+            height: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-align: center;
+            
+        }
+
+        p {
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="_logo">
+            <a href="index.html">
+              <img src="haruLogo.jpg" width="70"></a>
+        </div>
+        <nav>
+           <!-- navigation bar center -->
+            <ul class="_nav-center">
+                <li class="_services"><a href="services.html">Services</a></li>
+                <li class="_booknow"><a class="_abooknow" href="booknow.html">Book Now</a></li>
+                <li class="_contact"><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        <!-- navigation bar right -->
+            <ul class="_nav-right">   
+               <li class="_signin"><a href="signin.html">Sign In</a></li>
+            </ul>
+       </nav>
+    </header>
+      <h1>Services</h1>
+        <div class="_boxderma">
+          <h2>Dermatologic</h2>
+            <table>
+              <tr>
+              <td>Warts Removal</td>
+              <td class="_price"> P3,000 </td>
+              </tr>
+              <tr>
+                <td>Syringoma Removal</td>
+                <td class="_price"> P3,000 </td>
+              </tr>
+              <tr>
+                <td>Milia Removal</td>
+                <td class="_price"> P3,000 </td>
+              </tr>
+              <tr>
+                <td>Skin Tag Removal</td>
+                <td class="_price"> P3,000 </td>
+              </tr>
+              <tr>
+                <td>Keloid Injection </td>
+                <td class="_price"> P1,500 </td>
+              </tr>
+              <tr>
+                <td>Hair Loss Treatment </td>
+                <td class="_price"> P12,000(per session) </td>
+              </tr>
+            </table>
+        </div>
+        <div class="_boxfacial">
+          <h2>Facial Treatment</h2>
+            <table>
+              <tr>
+                <td>Galvanic Facial  </td>
+                <td class="_price"> P1,500 </td>
+              </tr>
+              <tr>
+                <td>Signature Hydra Facial </td>
+                <td class="_price"> P2,500 </td>
+              </tr>
+              <tr>
+                <td>Intensive Acne Facial   </td>
+                <td class="_price"> P3,000 </td>
+              </tr>
+              <tr>
+                <td>Carbon Peel Facial  </td>
+                <td class="_price"> P4,000 </td>
+              </tr>
+              <tr>
+                <td>Stem Cells Facial   </td>
+                <td class="_price"> P4,500 </td>
+              </tr>
+            </table>
+          </div>
+           <div class="_boxlaser">
+              <h2>Laser Treatments </h2>
+                <table>
+                  <tr>
+                    <td>Lightening/Depigmenting Laser Treatment  </td>
+                    <td class="_price"> P2500 (Depending on Area) </td>
+                  </tr>
+                  <tr>
+                    <td>Skin Resurfacing Premium </td>
+                    <td class="_price">   P5,500 </td>
+                  </tr>
+                  <tr>
+                    <td>Skin Resurfacing Regular   </td>
+                    <td class="_price">  P4,500 </td>
+                  </tr>
+                </table>
+          </div>
+          <div class="_boxdinject">
+            <h2>Injectables </h2>
+              <table>
+                <tr>
+                  <td>Botox Injection  </td>
+                  <td class="_price"> P350 / unit </td>
+                </tr>
+                <tr>
+                  <td>Sclerotherapy  </td>
+                  <td class="_price"> P2,000 </td>
+                </tr>
+              </table>
+          </div>
+          <div class="_boxiv">
+            <h2>IV Drip </h2>
+              <table>
+                <tr>
+                  <td>Radiance Drip  </td>
+                  <td class="_price"> P2,500 </td>
+                </tr>
+                <tr>
+                  <td>Vitality Drip  </td>
+                  <td class="_price"> P3,500 </td>
+                </tr>
+              </table> 
+          </div>
+          <div class="_slim">
+              <h2>Slimming and Conturing </h2>
+                <table>
+                    <tr>
+                      <td>Haru Silhoutte  </td>
+                      <td class="_price"> P2,000 (Depending on Area)</td>
+                    </tr>
+                    <tr>
+                      <td>Fat dissolving injection  </td>
+                      <td class="_price"> P3,000 (per session/per area)</td>
+                    </tr>
+                </table> 
+          </div>
+          <div class="_other">
+              <h2>Others </h2>
+                <table>
+                  <tr>
+                    <td>Chemical Peeling  </td>
+                  </tr>
+                  <tr>
+                    <td>Body Scrub  </td>
+                  </tr>
+                  <tr>
+                    <td>Tattoo Laser Removal</td>
+                  </tr>
+                </table> 
+          </div>
+
+      <footer>
+         <p>&copy; 2023 Haru Aesthetic, Skin care and Wellness Clinic. <br>  All Rights Reserved</p>
+      </footer>
+
+</body>
+</html>

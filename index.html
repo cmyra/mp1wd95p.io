@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+    <style>
+       
+        body {
+            margin: auto 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: antiquewhite;    
+       }
+
+        ._logo {
+        left: -9px;
+        top: -21px; 
+        padding: 20px;
+        background: white;
+        border-radius: 50%;
+        margin: 0;
+        position: fixed;
+        cursor:pointer;
+       }
+
+       ._nav-center {
+            margin: 0;
+            background-color: black;
+            height: 50px;
+            display: flex;
+            list-style: none;       
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            justify-content: center;
+            letter-spacing: 1.5px;
+        }
+
+        ._nav-right {
+            position: absolute;
+            top: 0;
+            right: 16px;
+            display: flex;
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
+
+        li { 
+            display: inline-block;
+            padding: 0 0.938rem;
+            margin: auto 0;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #fd5f00;
+        }
+
+        ._booknow {
+            background-color: #DA8EEA;
+            border: 1vh solid transparent;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        ._abooknow {
+            color: black;
+        }
+
+        ._abooknow :hover{
+            color: #fd5f00;
+        }
+
+        @media only screen and (max-width: 600px) {
+            ._nav-center, ._nav-right, ._social, p { 
+                font-size: 0.5em;
+                padding: 0;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            ._abooknow, ._booknow {
+               color: white; 
+               background-color: black;
+            }
+
+            h1 {
+                color: black;
+            }
+            p {
+                text-align: left;
+            }
+        }
+
+        ._coverimg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 5vh;
+            width: 50%;
+        }
+
+        h1 {
+            margin-top: 5vh;
+            text-align: center;
+        }
+        
+        footer{
+            background-color: black;
+            height: 50px;
+        }
+
+        ._social{
+           margin-bottom: -57px;
+           cursor: pointer;
+        }
+        
+        ._twitter{
+            background-color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+    </style>
+</head>
+    <body>
+        <header>
+            <div class="_logo">
+                <a href="index.html">
+                <img src="haruLogo.jpg" width="70"></a>
+            </div>
+            <nav>
+                <!-- navigation bar center -->
+                <ul class="_nav-center">
+                    <li class="_services"><a href="services.html">Services</a></li>
+                    <li class="_booknow"><a class="_abooknow" href="booknow.html">Book Now</a></li>
+                    <li class="_contact"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!-- navigation bar right -->
+                <ul class="_nav-right">   
+                    <li class="_signin"><a href="signin.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div>
+    <a class="_abooknow" href="booknow.html"><h1>Book a consult and service today!</h1></a>
+    </div>
+    <div>
+        <img class="_coverimg" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <ul  class="_social" style="text-align: right;">
+        <li><img src="intagram.svg" alt="" width="30"></li>
+        <li><img class="_twitter" src="twitter.svg" alt="" width="30"></li>
+        <li><img src="fb.svg" alt="" width="30"></li>
+        <li><img src="messenger.png" alt="" width="30"></li>
+    </ul> 
+        <footer>
+           <p> &copy; 2023 Haru Aesthetic, Skin care and Wellness Clinic. <br>  All Rights Reserved </p>
+        </footer>
+    </body>
+</html>

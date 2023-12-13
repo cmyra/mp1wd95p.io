@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+            margin: auto 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            background-color: antiquewhite;
+       }
+
+        ._logo {
+        left: -9px;
+        top: -21px; 
+        padding: 20px;
+        background: white;
+        border-radius: 50%;
+        margin: 0;
+        position: fixed;
+        cursor:pointer;
+       }
+
+       ._nav-center {
+            margin: 0;
+            background-color: black;
+            height: 50px;
+            display: flex;
+            list-style: none;       
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            justify-content: center;
+            letter-spacing: 1.5px;
+        }
+
+        ._nav-right {
+            position: absolute;
+            top: 0;
+            right: 16px;
+            display: flex;
+            list-style: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+        }
+
+        li { 
+            padding: 0 0.938rem;
+            margin: auto 0;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        ._booknow {
+            background-color: #DA8EEA;
+            border: 1vh solid transparent;
+            border-radius: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        ._abooknow {
+            color: black;
+        }
+
+        nav a:hover {
+            color: #fd5f00;
+        }
+
+        @media only screen and (max-width: 600px) {
+            ._nav-center, ._nav-right { 
+                font-size: 0.5em;
+                padding: 0;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            ._abooknow, ._booknow {
+               color: white; 
+               background-color: black;
+            }
+            
+            .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+            font-size: 0.5em;
+            }
+        }
+
+        h1 {
+            margin-top: 5vh;
+             text-align: center;
+        }
+
+  
+        /* Form design */
+        input[type=text], input[type=email], input[type=tel], input[type=date], input[type=time], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid antiquewhite;
+            border-radius: 4px;
+            
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+      
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: antiquewhite;
+            padding: 20px;
+            
+        }
+
+        .col-25 {
+            display: inline-block;
+            width: 20%;
+            margin-top: 6px;
+        
+        }
+
+        .col-75 {
+            display: inline-block;
+            width: 40%;
+            margin-top: 6px;
+        }
+
+        ._submit {
+          color: #fff;
+          letter-spacing: 1px;
+          border: none;
+          background: #4070f4;
+          cursor: pointer;
+          padding: 2vh 5vh;
+          border-radius: 6px;
+        }
+
+        .row ._submit :hover{
+          background: #0e4bf1;
+        }
+
+        footer{
+            margin: 0;
+            margin-top: 5vh;
+            background-color: black;
+            height: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+        p{
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="_logo">
+            <a href="index.html">
+              <img src="haruLogo.jpg" width="70"></a>
+        </div>
+    
+       <nav>
+           <!-- navigation bar center -->
+            <ul class="_nav-center">
+                <li class="_services"><a href="services.html">Services</a></li>
+                <li class="_booknow"><a class="_abooknow" href="booknow.html">Book Now</a></li>
+                <li class="_contact"><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- navigation bar right -->
+            <ul class="_nav-right">   
+                <li class="_signin"><a href="signin.html">Sign In</a></li>
+            </ul>
+       </nav>
+    </header>
+     
+    <h1>Request for an appointment</h1>
+ 
+    <div class="container">
+      <form action="/action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname"> Name (required)</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email (required)</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="juan@yahoo.com" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="phone_num"> Phone (required)</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="phone_num" name="phone_num" placeholder="Phone number" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="services">Choice of Service</label>
+            </div>
+            <div class="col-75">
+              <select id="services" name="services">
+                <option value="dermatologic">Dermatologic</option>
+                <option value="facial">Facial Treatment</option>
+                <option value="laser">Laser Treatments</option>
+                <option value="injectables">Injectables</option>
+                <option value="ivdrip">IV Drip</option>
+                <option value="slim">Slimming and Conturing</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="dappt"> Date (required)</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="dappt" name="dappt" placeholder="Select your preferred date" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="tappt"> Time (required)</label>
+            </div>
+            <div class="col-75">
+              <input type="time" id="tappt" name="tappt" placeholder="Select your preferred time" required>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Medical Information (optional)</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="comments">Comments (optional)</label>
+            </div>
+            <div class="col-75">
+              <textarea id="comments" name="comments" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div><br>
+
+          <div>                
+            <input type="checkbox"  name="consent" id="consent" >
+            I verify that I am of legal age (18 years old and above) to undergo this treatment.
+          </div><br>
+
+          <div class="row">
+            <input class="_submit" type="submit" value="Submit">
+          </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Haru Aesthetic, Skin care and Wellness Clinic. <br>  All Rights Reserved </p>
+    </footer>
+
+</body>
+</html>
